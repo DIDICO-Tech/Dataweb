@@ -238,10 +238,7 @@ header .menu {
         width: 80%
     
      }
-     .transaction {
-        display: block;
-        margin: 20px;
-     }
+     
  }
  @media(max-width:1200px) {
     .content {
