@@ -130,6 +130,10 @@ header .menu {
     margin-left: 30px;
     
  }
+ 
+ .fundwallet:hover {
+    cursor: pointer;
+ }
 
  .fundwallet .wall {
     color: white;
@@ -179,6 +183,43 @@ header .menu {
  .smarter img {
     width: 40%;
     align-self: center;
+    padding-left: 100px;
+    
+ }
+
+ .transaction {
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    margin: 20px;
+ }
+ .transaction p{
+    color: black;
+ }
+
+ .history {
+    display:flex;
+    background: rgb(255, 255, 255);
+    border: 1px solid white ;
+
+ }
+ .history .pay{
+    color: rgb(32, 21, 228);
+    font-size: 1cm;
+    padding-left: 10px;
+ }
+ .history .wall {
+    color: rgb(221, 99, 23);
+    font-size: 1cm;
+    padding-left: 10px;
+ }
+ .history .let {
+    color: rgb(228, 21, 42);
+    font-size: 1cm;
+    padding-left: 10px;
+ }
+ .history p {
+    padding: 10px;
     
  }
 
@@ -197,6 +238,10 @@ header .menu {
         width: 80%
     
      }
+     .transaction {
+        display: block;
+        margin: 20px;
+     }
  }
  @media(max-width:1200px) {
     .content {
@@ -212,6 +257,7 @@ header .menu {
         background: white;
         width: 80%
     
+     }
      }
  }
 
