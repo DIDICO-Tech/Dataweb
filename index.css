@@ -235,6 +235,7 @@ header .menu {
     .account {
         margin: -50px 40px 0 300px;
         background: white;
+        width: 700px
     
      }
      
@@ -269,6 +270,7 @@ header .menu {
     .account {
         margin: -50px 40px 0 300px;
         background: white;
+        width:700px;
     
      }
  }
