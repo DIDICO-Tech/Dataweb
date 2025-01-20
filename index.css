@@ -1,277 +1,521 @@
 * {
-    margin: 0;
     padding: 0;
+    margin:0;
     box-sizing: border-box;
 }
-
 body {
-    background: rgb(246, 233, 233);
+    background-color: rgb(222, 218, 218);
 }
 
-/* Header Section*/
+button {
+    cursor: pointer;
+}
+
+
 header {
-    background: rgb(107, 43, 226);
     display:flex;
     justify-content: space-between;
-    height: 70px;
-    position:fixed;
+    background: rgb(30, 30, 179);
+    height: 40px;
     width: 100%;
 }
-
-header .welcome {
-    display:flex;
-    justify-content: space-between;
-    width: 250px;
-    background: rgb(42, 7, 148);
+header h3 {
+    color: white;
     text-align: center;
-    padding: 15px;
-    color: white;
-}
-
-header .logout {
-    padding: 30px 40px 30px;
-    display: flex;
-}
-
-header button {
-    font-size: .4cm;
-    color: white;
-    background: transparent;
-    border: none;
-    font-family: 'Times New Roman', Times, serif;
-
-}
-
-header .icon {
-    color: white;
-    font-weight: bolder;
-    font-size: 20px;
-    font-family:'Times New Roman', Times, serif;
+    padding-top: 5px;
 }
 header .menu {
-    color: white;
-    font-size: 1cm;
+    padding: 10px 10px 10px;
+    font-size: .8cm;
 }
 
-/* Profile Section */
-
-.dashboard {
-    background: rgb(32, 32, 58);
-    width:250px;
-    position:fixed;
-    margin-top: 70px;
-}
-.profile {
-    display:flex;
-    max-width: 300px;
-    
-    padding: 10px;
-    height: 80px;
+.logout {
+    position:sticky;
+    top: 0;
+    background: rgb(50, 50, 186);
+    text-align: right;
+    padding: 5px 10px 5px;
     border-bottom: 1px solid grey;
 }
-
-.profile .icon {
-    color: white;
-    font-size: 1.3cm;
-    padding-left: 10px;
+.logout button {
+    background: transparent;
+    border: none;
+    color: rgb(191, 187, 187);
+    font-weight: 600;
 }
-
-.profile .name {
-    color: white;
-    padding: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight:lighter;
-}
-.name p {
-    font-size: 15px;
-    padding-top: 10px;
-}
-
-.dashboard .first {
-    display:flex;
-    padding: 20px;
-}
-
-.first .home {
-    color: white;
-}
-
-.first p {
-    color: white;
-    padding-left: 20px;
-}
-.first :hover {
-    background-color: rgb(190, 187, 187);
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-}
-
-/* Content Section */
 
 .content {
-    background: rgb(47, 47, 205);
-    padding: 120px 50px 0 300px;
+    display: flex;
+    background: rgb(22, 22, 164);
+    color: white;
+    padding: 50px 20px 70px;
+}
+.fundwallet {
+    margin: 60px 0 0 20px;
+    background:rgb(215, 142, 6);
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+}
+.account {
+    background: white;
+    margin: -40px 10px 0;
+}
+.account .goodday {
+    margin: 10px;
+    height: 50px;
+    display: flex;
+    padding: 20px 0 0 5px;
+    border-bottom: 1px solid rgb(225, 220, 220);
+}
+
+.goodday p {
+    font-size: 20px;
+}
+.goodday h2 {
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.smarter {
+    justify-items: center;
+    height: 250px;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+.smarter h3 {
+    text-align: center;
+}
+.smarter img {
+    position:relative;
+    width:100%;
+    height: 45%;
+
+}
+.smarter p {
+    text-align: center;
+    color:red;
+}
+
+.faq {
     display:flex;
-    height: 350px;
     justify-content: space-between;
+    margin: 30px;
+}
+
+.faq h3 {
+    background: blue;
+    color:white;
+    width: 33.3%;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.new {
+    background: rgb(14, 14, 48);
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.new h4 {
+    color: rgb(221, 190, 12);
+}
+.new p {
+    color: white;
+    text-indent: 10px;
+}
+
+.new button {
+    color: purple;
+    background: white;
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 20px 5px 10px;
+    margin: 5px;
+    justify-content: center;
+}
+
+.payments {
+    display: flex;
+    width: 100%;
+    margin: 15px;
+}
+
+.bank {
+    background: rgb(43, 43, 211);
+    width: 48%;
+}
+.bank img {
+    width: 30%;
+    padding: 10px;
+}
+
+.bank h3 {
+    color: white;
+    padding: 10px 15px;
+}
+
+.bank h2 {
+    font-size: 25px;
+    color: rgb(230, 12, 12);
+    padding: 10px 15px 0 50px;
+    background: rgb(242, 237, 237);
+    text-align: center;
+}
+.bank p {
+    color: white;
+    padding: 10px 15px;
+}
+
+.remitta {
+    background: rgb(28, 40, 104);
+    width: 48%;
+}
+.remitta img {
+    width: 30%;
+    padding: 10px;
+    height: 30%;
+}
+.remitta h2 {
+    font-size: 25px;
+    color: rgb(230, 12, 12);
+    padding: 10px 15px 0 50px;
+    background: rgb(244, 241, 241);
+    text-align: center;
+    border-left: 2px solid red;
+}
+
+.remitta h3 {
+    color: white;
+    padding: 10px 15px;
+}
+
+
+.remitta p {
+    color: rgb(114, 255, 6);
+    padding: 10px 15px;
+}
+
+
+.remitta button {
+    color: purple;
+    background: white;
+    width: 30%;
+    height: 30px;
+    border: none;
+    border-radius: 20px 5px 10px;
+    margin: 10px 0 0 30%;
+}
+
+.transaction {
+    display: flex;
+}
+
+.transaction p {
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.transaction .history {
+    display: flex;
+    width: 50%;
+    background: white;
+    margin: 15px;
+    padding: 10px;
+}
+
+.history .pay {
+    color:blueviolet;
+    padding: 10px;
+    font-size: .8cm;
+}
+.history .let {
+    color: orange;
+    padding: 10px;
+    font-size: .8cm;
+}
+.history .wall {
+    color: rgb(1, 121, 5);
+    padding: 10px;
+    font-size: .8cm;
+}
+
+.summary {
+    background: white;
+    display:flex;
+}
+
+.info {
+    display:flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    margin:30px;
+}
+
+.info .summary {
+    width: 30%;
+    padding: 10px;
+}
+
+.summary .wallet {
+    display: flex;
+    padding: 10px;
+}
+.wallet .pay {
+    color: white;
+    background: blue;
+    font-size: 1cm;
+    width:50px;
+    align-items: center; 
+    padding: 5px;
+}
+
+.wallet p {
+    padding: 5px;
+}
+
+.summary .referral {
+    display: flex;
+    padding: 10px;
+}
+
+.referral .pay {
+    color: white;
+    background: blueviolet;
+    font-size: 1cm;
+    align-items: center; 
+    padding: 5px;
+}
+
+.referral p {
+    padding: 5px;
+}
+
+.summary .bonus {
+    display: flex;
+    padding: 10px;
+}
+
+.bonus .pay {
+    color: white;
+    background: rgb(86, 86, 243);
+    font-size: 1cm;
+    width:50px;
+    align-items: center; 
+    padding: 5px;
+}
+
+.bonus p {
+    padding: 5px;
+}
+
+.support {
+    display:flex;
+    margin:30px;
     width: 100%;
 }
 
-.content h3, p {
-    color: white;
+.notifications {
+    background: linear-gradient(to right, rgb(10, 10, 147), black);
+    padding: 10px;;
+    width: 20%;
+    margin: 30px;
 }
-
-.content  p {
-    font-size: 20px;
-}
- 
-.fundwallet {
-    margin-left: 30px;
-    
- }
- 
- .fundwallet:hover {
-    cursor: pointer;
- }
-
- .fundwallet .wall {
+.notifications h2 {
     color: white;
-    background: orange;
-    height: 50px;
-    width: 110px;
-    border-radius: 20px;
-    font-size: 15px;
-    font-weight: 600;
-    border: none;
- }
-
- /* Account section */
-
- .account {
-    margin: -50px 50px 0 300px;
-    background: white;
-    width: 80%
-
- }
- .goodday {
-    display:flex;
-    padding: 20px;
-    border-bottom: 1px solid grey;
- }
-
- .goodday h2 {
-    color: black;
-    padding-left: 5px;
- }
- .goodday p {
-    color: black;
-    text-align: center;
-    font-size: 23px;
- }
-
- .smarter {
-    align-items: center;
- }
-
- .smarter p {
-    color: black;
-    text-align: center;
-    font-size: 23px;
- }
-
- .smarter img {
-    width: 40%;
-    align-self: center;
-    padding-left: 100px;
-    
- }
-
- .transaction {
-    display: flex;
-    justify-content: space-between;
-    justify-content: space-around;
-    margin: 20px;
- }
- .transaction p{
-    color: black;
- }
-
- .history {
-    display:flex;
-    background: rgb(255, 255, 255);
-    border: 1px solid white ;
-
- }
- .history .pay{
-    color: rgb(32, 21, 228);
-    font-size: 1cm;
-    padding-left: 10px;
- }
- .history .wall {
-    color: rgb(221, 99, 23);
-    font-size: 1cm;
-    padding-left: 10px;
- }
- .history .let {
-    color: rgb(228, 21, 42);
-    font-size: 1cm;
-    padding-left: 10px;
- }
- .history p {
     padding: 10px;
-    
- }
+}
+.notifications p {
+    color: white;
+    padding: 10px;
+}
+.notifications button {
+    background: rgb(255, 149, 0);
+    color: white;
+    padding: 10px;
+    margin: 25% 25% 0;
+    border: none;
+    border-radius: 5px;
+}
 
- @media(max-width:480px) {
-    .content {
-        background: rgb(47, 47, 205);
-        padding: 120px 50px 0 300px;
+.faqs {
+    background: linear-gradient(to right, rgb(10, 10, 147), black);
+    padding: 10px;
+    width: 20%;
+    margin: 30px;
+}
+.faqs h2 {
+    color: white;
+    padding: 10px;
+}
+.faqs p {
+    color: white;
+    padding: 10px;
+}
+.faqs button {
+    background: rgb(0, 4, 255);
+    color: white;
+    width: ;
+    padding: 10px;
+    margin: 25% 25% 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact {
+    background: linear-gradient(to right, rgb(10, 10, 147), black);
+    padding: 10px;
+    width: 20%;
+    margin: 30px;
+}
+.contact h2 {
+    color: white;
+    padding: 10px;
+}
+.contact p {
+    color: white;
+    padding: 10px;
+}
+.contact button {
+    background: rgb(32, 171, 4);
+    color: white;
+    width:80%;
+    padding: 10px;
+    margin: ;
+    border: none;
+    border-radius: 5px;
+}
+.contact .whatsapp {
+    color: white;
+    padding-left: 20px;   
+}
+
+
+.gallery {
+    display:flex;
+    margin: 30px;
+    
+}
+
+.gallery .recharge {
+    background: white;
+    margin: 30px;
+}
+
+.recharge img {
+    width: 50%;
+    margin: 25px 25px 20px 50px ;
+    align-items: center;
+}
+.recharge .airtime {
+    height: 50%;
+    width: 40%;
+}
+.recharge p {
+    text-align: center;
+}
+
+.recharge .electricity {
+    height: 50%;
+    width: 40%;
+}
+
+@media(max-width: 600px) {
+
+    .faq {
         display: block;
-        height: 550px;
-        width: 720px;
+        width: 80%;
+        margin: 30px;
     }
-
-    .account {
-        margin: -50px 40px 0 300px;
-        background: white;
-        width: 700px
+    .faq h3 {
+        background: blue;
+        color:white;
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        margin: 5px;
+    }
     
-     }
-     
- }
- @media(max-width:1200px) {
-    .content {
-        background: rgb(47, 47, 205);
-        padding: 120px 50px 0 300px;
+    .payments {
+        display: block;
+        width: 100%;
+        margin: 5%;
+    }
+    .bank {
+        background: rgb(43, 43, 211);
+        width: 90%;
+    }
+    .bank img {
+        width: 30%;
+        padding: 10px;
+    }
+    .remitta {
+        background: rgb(28, 40, 104);
+        width: 90%;
+    }
+    .remitta img {
+        width: 30%;
+        padding: 10px;
+        height: 30%;
+    }
+    
+    .transaction {
         display: flex;
-        height: 550px;
-        width: 1250px;
     }
-
-    .account {
-        margin: -50px 40px 0 300px;
-        background: white;
     
-    
-     }
-     }
- }
-
- @media(max-width:720px) {
-    .content {
-        background: rgb(47, 47, 205);
-        padding: 120px 50px 0 300px;
-        display: flex;
-        height: 550px;
-        width: 900px;
+    .info {
+        display: block;
+        justify-content: space-between;
+        justify-content: space-around;
+        margin:10%;
     }
-
-    .account {
-        margin: -50px 40px 0 300px;
-        background: white;
-        width:700px;
+    .info .summary {
+        width: 100%;
+        padding: 10px;
+    }
+    .support {
+        display: block;
+        justify-content: space-between;
+        justify-content: space-around;
+        margin: 10%;
+        width: 100%;
+    }
+    .notifications {
+        background: linear-gradient(to right, rgb(10, 10, 147), black);
+        padding: 10px;;
+        width: 80%;
+    }
+    .faqs {
+        background: linear-gradient(to right, rgb(10, 10, 147), black);
+        padding: 10px;
+        width: 80%;
+    }
+    .contact {
+        background: linear-gradient(to right, rgb(10, 10, 147), black);
+        padding: 10px;
+        width: 80%;
+    }
     
-     }
- }
- 
+    .gallery {
+        display: block;
+        justify-content: space-between;
+        justify-content: space-around;
+        margin: 5%;
+        
+    }
+    .gallery .recharge {
+        background: white;
+        margin: 5%;
+        width: 90%;
+    }
+}
